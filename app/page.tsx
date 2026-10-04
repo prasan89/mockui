@@ -44,7 +44,7 @@ function Carousel({ items }: { items: string[][] }) {
       {items.map(([name, art, players, background]) => (
         <article className="game-card" key={name}>
           <div className="game-art" style={{ background }}>
-            <span className="provider">PLAYZONE</span>
+            <span className="provider">1WIN GAMES</span>
             <strong>{name}</strong>
             <div className="art-symbol">{art}</div>
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <main className="app-shell">
       <header className="topbar">
-        <div className="brand">P<span>Z</span></div>
+        <div className="brand">1win</div>
         <div className="wallet">
           <div className="coin">₮</div>
           <strong>75.00</strong>
@@ -75,7 +75,7 @@ export default function Home() {
       <div className="content">
         <section className="hero">
           <div className="hero-copy">
-            <small>PLAYZONE</small>
+            <small>1WIN GAMES</small>
             <h1>VIP CLUB</h1>
             <p>JOIN &amp; WIN</p>
             <div className="dots"><b /><b /><b /><b /></div>
@@ -106,7 +106,7 @@ export default function Home() {
           <Carousel items={continueGames} />
         </Section>
 
-        <Section title="PlayZone games" icon="✦">
+        <Section title="1win games" icon="✦">
           <Carousel items={games} />
         </Section>
 
